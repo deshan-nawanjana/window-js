@@ -1,0 +1,55 @@
+<script src="engine/index.js"></script>
+<link rel="stylesheet" href="engine/index.css">
+
+<style>
+    .inside {
+        padding: 20px;
+        color: rgba(255,255,255,0.6);
+        font-family: 'Courier New', Courier, monospace;
+    }
+    a {
+        display: block;
+        color: rgba(255,255,255,0.4);
+        text-decoration: none;
+        font-weight: bolder;
+        padding: 10px;
+    }
+</style>
+
+<div class="window">
+    <div class="holder">
+        <div class="holder_button hb_1"></div>
+        <div class="holder_button hb_2"></div>
+        <div class="holder_button hb_3"></div>
+    </div>
+    <div class="inside"></div>
+</div>
+
+<div class="window">
+    <div class="holder">
+        <div class="holder_button hb_1"></div>
+        <div class="holder_button hb_2"></div>
+        <div class="holder_button hb_3"></div>
+    </div>
+    <div class="inside">
+        <b>WindowJS by Deshan Nawanjana</b>
+        <br>
+        <a href="https://dnjs.info/" target="_balnk">https://dnjs.info/</a>
+    </div>
+</div>
+
+<script>
+
+let win_1 = new WindowJS(
+    document.querySelectorAll('.window')[0],
+    document.querySelectorAll('.holder')[0],
+    30, 30, 370, 320
+);
+
+let win_2 = new WindowJS(
+    document.querySelectorAll('.window')[1],
+    document.querySelectorAll('.holder')[1],
+    70, 120, 370, 320
+);
+
+</script>
